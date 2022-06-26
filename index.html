@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AL QURAN</title>
+    <title>আল কুরআন</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -21,16 +22,18 @@
 
     </div>
     <div class="player">
+        <button onclick="toggle()"><i class="fas fa-bars"></i></button>
         <button onclick="playPrev()"><i class="fas fa-step-backward"></i></button>
         <button onclick="playPause()"><i class="fas fa-play"></i></button>
         <button onclick="playNext()"><i class="fas fa-step-forward"></i></button>
         <button onclick="stopAudio()"><i class="fas fa-stop"></i></button>
+        <button onclick="autoPlay()"><i class="fas fa-toggle-on"></i></button>
         <div id="loader"></div>
     </div>
 
 
-    <script src="js/script.min.js"></script>
-    <script src="js/audioplayer.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/audioplayer.js"></script>
 </body>
 
 </html>

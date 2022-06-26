@@ -22,16 +22,8 @@ body {
     overflow: hidden;
 }
 
-.a {
-    text-decoration: none;
-    padding: 10px;
-    color: #000;
-    font-family: Anek Bangla;
-    font-size: 1.2em;
-}
-
 li {
-    list-style: decimal-leading-zero;
+    list-style: none;
 }
 
 .container {
@@ -56,26 +48,38 @@ li {
 #index h2 {
     font-family: Anek Bangla;
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background: var(--primary-color);
     padding: 10px 55px;
 }
 
 #index ol {
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 #index ol li {
-    padding: 10px;
+    padding: 10px 0;
+    color: #000;
+    font-family: Anek Bangla;
+    font-size: 1.1em;
     border-bottom: 1px solid #ddd;
+}
+
+#index ol li p {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 #index ol li:hover {
     cursor: pointer;
+    color: darkred;
+    transform: translateX(20px);
+    transition: 0.5s ease-out;
 }
 
 #index ol li:last-child {
     border: none;
+    margin-bottom: 10px;
 }
 
 #main {
@@ -102,7 +106,7 @@ li {
     background: var(--primary-color);
     color: #000;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -110,37 +114,38 @@ li {
     width: 50%;
     font-family: Anek Bangla;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.2em;
     background: var(--secondary-color);
     margin: 10px auto;
     padding: 10px 30px;
     border-radius: 50px;
 }
 
-.ini {
-    padding: 0 50px;
-    font-family: Anek Bangla;
-}
-
-.ini .ar,
-.ini .pr,
-.ini .bn {
-    text-align: center;
-    padding: 5px;
-}
-
 .ayat_num {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     font-family: Anek Bangla;
     font-weight: normal;
     font-size: 1em;
     background: var(--secondary-color);
     border-radius: 50%;
-    transform: translate(-40px, 10px);
+    left: 0;
+    margin-left: 10px;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 5px;
+}
+
+.a_ayat button,
+.ayat button {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 2em;
+    border: none;
+    background: none;
+    line-height: 0;
+    color: rgba(80, 120, 180, 0.4);
 }
 
 .ayat,
@@ -191,7 +196,10 @@ li {
     overflow: hidden;
 }
 
-.player button {
+.player button,
+.player button:active,
+.player button::after,
+.player button::before {
     width: 40px;
     height: 40px;
     margin: 3px 20px;
@@ -214,4 +222,36 @@ li {
     width: 0%;
     background: #002864;
     z-index: -1;
+}
+
+@media (max-width: 900px) {
+    #index h2 {
+        font-size: 1.2em;
+    }
+    #index ol {
+        padding: 0 20px;
+    }
+    #index ol li {
+        font-size: 1em;
+    }
+    .name h2 {
+        font-size: 1.2em;
+    }
+    .ayat,
+    .a_ayat {
+        font-size: 1em;
+    }
+    .ayat_num {
+        padding-top: 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    #index {
+        width: 100%;
+        display: none;
+    }
+    #main {
+        width: 100%;
+    }
 }

@@ -8,25 +8,36 @@ var playing = false;
 var ini = true;
 var base_link = 'https://download.quranicaudio.com/verses/Alafasy/ogg/';
 var file_name = '';
+var autoplay = true;
 
+function autoPlay() {
+    if (autoplay) {
+        autoplay = false;
+        document.querySelector(".fa-toggle-on").classList.add("fa-toggle-off");
+        document.querySelector(".fa-toggle-on").classList.remove("fa-toggle-on");
+    } else {
+        autoplay = true;
+        document.querySelector(".fa-toggle-off").classList.add("fa-toggle-on");
+        document.querySelector(".fa-toggle-off").classList.remove("fa-toggle-off");
+    }
+}
 // Auto next on finish
 audio.addEventListener('ended', function() {
     finished();
     if (ayat < verses) {
         playNext();
-    } else if (ayat == verses) {
-        // if (sura < 114) {
-        //     stopAudio();
-        //     sura += 1;
-        //     createDOM();
-        //     playAudio();
-        // }
+    } else if (ayat == verses && autoplay) {
+        if (sura < 114) {
+            stopAudio();
+            sura += 1;
+            createDOM();
+            playPause();
+        }
     }
 });
 
 // Load audio with link
 function loadAudio() {
-    // link = '../audio/' + sura + '/' + ayat + '.mp3';
     // Online link
     getFileName(sura, ayat);
     link = base_link + file_name;
@@ -39,6 +50,10 @@ function playPause() {
     if (playing) {
         audio.pause();
         playing = false;
+        // Not playing - show play button
+        document.querySelector(".fa-pause").classList.add("fa-play");
+        document.querySelector(".fa-pause").classList.remove("fa-pause");
+
     } else {
         if (ini && sura > 1) {
             ini = false;
@@ -48,12 +63,33 @@ function playPause() {
             bismillah.play();
             bismillah.addEventListener('ended', function() {
                 playAudio();
+                playing = true;
             });
         } else {
             playAudio();
+            playing = true;
         }
-        playing = true;
+        // Playing - show pause button
+        document.querySelector(".fa-play").classList.add("fa-pause");
+        document.querySelector(".fa-play").classList.remove("fa-play");
     }
+}
+
+function playCurrent(num) {
+    if (playing) {
+        stopAudio();
+        ayat = (num.id).slice(1);
+        playAudio();
+        playing = true;
+    } else {
+        ayat = (num.id).slice(1);
+        playAudio();
+        playing = true;
+        ini = false;
+    }
+    // Playing - show pause button
+    document.querySelector(".fa-play").classList.add("fa-pause");
+    document.querySelector(".fa-play").classList.remove("fa-play");
 }
 
 function playAudio() {
@@ -68,16 +104,21 @@ function stopAudio() {
     finished();
     audio.pause();
     playing = false;
-    ini = true;
     ayat = 1;
     link = '';
+    // Not playing - show play button
+    if (!ini) {
+        document.querySelector(".fa-pause").classList.add("fa-play");
+        document.querySelector(".fa-pause").classList.remove("fa-pause");
+    }
+    ini = true;
 }
 
 function playNext() {
     if (ayat < verses && playing) {
         finished();
         audio.pause();
-        ayat += 1;
+        ayat = ayat - 1 + 2;
         playAudio();
     }
 }
