@@ -3,6 +3,16 @@
     --secondary-color: rgba(80, 120, 180, 0.2);
 }
 
+@font-face {
+    font-family: Anek Bangla;
+    src: url(../fonts/AnekBangla-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kitab;
+    src: url(../fonts/kitab.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +29,7 @@ body {
     background-image: url(../img/bg_6.jpg);
     background-size: cover;
     padding: 3px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 li {
@@ -191,7 +201,8 @@ li {
     background: var(--primary-color);
     border-radius: 13px;
     display: flex;
-    margin: 3px auto;
+    margin: 0 auto;
+    margin-bottom: 3px;
     justify-content: center;
     overflow: hidden;
 }
@@ -253,5 +264,41 @@ li {
     }
     #main {
         width: 100%;
+        margin: 0;
+    }
+    .name {
+        padding: 10px;
+    }
+    .name h2 {
+        width: 80%;
+        padding: 5px 20px;
+        font-size: 1.1em;
+    }
+    .ayat_num {
+        width: 35px;
+        height: 35px;
+        padding-top: 2px;
+    }
+    .ayat,
+    .a_ayat {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .ar {
+        font-size: 1.3em;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    .pr,
+    .bn {
+        padding: 10px;
+    }
+    .player button,
+    .player button:hover {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        padding: 10px;
+        border: none;
     }
 }

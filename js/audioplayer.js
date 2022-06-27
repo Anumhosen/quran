@@ -51,9 +51,7 @@ function playPause() {
         audio.pause();
         playing = false;
         // Not playing - show play button
-        document.querySelector(".fa-pause").classList.add("fa-play");
-        document.querySelector(".fa-pause").classList.remove("fa-pause");
-
+        showPlay();
     } else {
         if (ini && sura > 1) {
             ini = false;
@@ -70,8 +68,7 @@ function playPause() {
             playing = true;
         }
         // Playing - show pause button
-        document.querySelector(".fa-play").classList.add("fa-pause");
-        document.querySelector(".fa-play").classList.remove("fa-play");
+        showPause();
     }
 }
 
@@ -81,6 +78,7 @@ function playCurrent(num) {
         ayat = (num.id).slice(1);
         playAudio();
         playing = true;
+
     } else {
         ayat = (num.id).slice(1);
         playAudio();
@@ -88,8 +86,7 @@ function playCurrent(num) {
         ini = false;
     }
     // Playing - show pause button
-    document.querySelector(".fa-play").classList.add("fa-pause");
-    document.querySelector(".fa-play").classList.remove("fa-play");
+    showPause();
 }
 
 function playAudio() {
@@ -103,15 +100,13 @@ function playAudio() {
 function stopAudio() {
     finished();
     audio.pause();
-    playing = false;
     ayat = 1;
     link = '';
-    // Not playing - show play button
-    if (!ini) {
-        document.querySelector(".fa-pause").classList.add("fa-play");
-        document.querySelector(".fa-pause").classList.remove("fa-pause");
-    }
+    playing = false;
     ini = true;
+    // Not playing - show play button
+    showPlay();
+
 }
 
 function playNext() {
@@ -137,7 +132,15 @@ function highLight() {
     var id = 'a' + ayat;
     var a_ayat = document.getElementById(id);
     a_ayat.className = 'a_ayat';
+    // if (window.innerWidth < 769) {
+    //     a_ayat.scrollIntoView(false);
+
+    // } else {
+    //     a_ayat.scrollIntoView();
+
+    // }
     a_ayat.scrollIntoView();
+
     document.getElementById('loader').style.width = (ayat / verses) * 100 + '%';
 }
 
@@ -167,4 +170,14 @@ function getFileName(sura, ayat) {
         al = ayat;
     }
     file_name = sl + al + '.ogg'
+}
+
+function showPause() {
+    document.getElementById("btnPlay").classList.add('fa-pause');
+    document.getElementById("btnPlay").classList.remove('fa-play');
+}
+
+function showPlay() {
+    document.getElementById("btnPlay").classList.add('fa-play');
+    document.getElementById("btnPlay").classList.remove('fa-pause');
 }

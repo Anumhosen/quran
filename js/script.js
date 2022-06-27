@@ -26,6 +26,7 @@ function loadSura(ind) {
     stopAudio();
     sura = ind.id;
     createDOM();
+    toggle();
 }
 
 function createDOM() {
@@ -57,7 +58,10 @@ function createDOM() {
             xhri.open("GET", "json/sura_names.json", true);
             xhri.send();
 
-            docs.scrollTo(0, 0);
+            docs.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     };
     xhr.open("GET", sura_link, true);
