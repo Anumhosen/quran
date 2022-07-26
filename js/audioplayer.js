@@ -6,9 +6,15 @@ var verses = 0;
 var link = '';
 var playing = false;
 var ini = true;
-var base_link = 'https://download.quranicaudio.com/verses/Alafasy/ogg/';
 var file_name = '';
 var autoplay = true;
+var offline = false;
+
+if (offline) {
+    var base_link = './audio/';
+} else {
+    var base_link = 'https://download.quranicaudio.com/verses/Alafasy/ogg/';
+}
 
 function autoPlay() {
     if (autoplay) {
@@ -29,7 +35,7 @@ audio.addEventListener('ended', function() {
     } else if (ayat == verses && autoplay) {
         if (sura < 114) {
             stopAudio();
-            sura += 1;
+            sura = sura - 1 + 2;
             createDOM();
             playPause();
         }
@@ -55,8 +61,11 @@ function playPause() {
     } else {
         if (ini && sura > 1) {
             ini = false;
-            // bismillah.src = '../audio/1/1.mp3';
-            bismillah.src = base_link + '001001.ogg';
+            if (offline) {
+                bismillah.src = base_link + '1/1.mp3';
+            } else {
+                bismillah.src = base_link + '001001.ogg';
+            }
             bismillah.load();
             bismillah.play();
             bismillah.addEventListener('ended', function() {
@@ -132,15 +141,7 @@ function highLight() {
     var id = 'a' + ayat;
     var a_ayat = document.getElementById(id);
     a_ayat.className = 'a_ayat';
-    // if (window.innerWidth < 769) {
-    //     a_ayat.scrollIntoView(false);
-
-    // } else {
-    //     a_ayat.scrollIntoView();
-
-    // }
-    a_ayat.scrollIntoView();
-
+    a_ayat.scrollIntoView(false);
     document.getElementById('loader').style.width = (ayat / verses) * 100 + '%';
 }
 
@@ -150,26 +151,28 @@ function finished() {
     document.getElementById('loader').style.width = 0 + '%';
 }
 
-
-// Make file name with sura & ayat number
 function getFileName(sura, ayat) {
-    var sl = '';
-    var al = '';
-    if (sura < 10) {
-        sl = '00' + sura;
-    } else if (sura < 100 && sura > 9) {
-        sl = '0' + sura;
+    if (offline) {
+        file_name = sura + '/' + ayat + '.mp3';
     } else {
-        sl = sura;
+        var sl = '';
+        var al = '';
+        if (sura < 10) {
+            sl = '00' + sura;
+        } else if (sura < 100 && sura > 9) {
+            sl = '0' + sura;
+        } else {
+            sl = sura;
+        }
+        if (ayat < 10) {
+            al = '00' + ayat;
+        } else if (ayat < 100 && ayat > 9) {
+            al = '0' + ayat;
+        } else {
+            al = ayat;
+        }
+        file_name = sl + al + '.ogg'
     }
-    if (ayat < 10) {
-        al = '00' + ayat;
-    } else if (ayat < 100 && ayat > 9) {
-        al = '0' + ayat;
-    } else {
-        al = ayat;
-    }
-    file_name = sl + al + '.ogg'
 }
 
 function showPause() {

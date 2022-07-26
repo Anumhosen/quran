@@ -6,30 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আল কুরআন</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="./Fontawesome-free-6.0.0-beta3-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/paralax.min.css">
+    <link rel="stylesheet" href="./css/style_2.css" id="theme">
+    <link rel="stylesheet" href="./css/style.css">
+    <style id="star_color">
+         :root {
+            --sc: rgb(255, 166, 225);
+        }
+    </style>
+    <style id="ar_font">
+        @font-face {
+            font-family: Arabic Font;
+            src: url(../fonts/kitab.ttf);
+        }
+    </style>
+    <style id="bn_font">
+        @font-face {
+            font-family: Bangla Font;
+            src: url(../fonts/AnekBangla-Regular.ttf);
+        }
+    </style>
+    <style id="ar_size_style">
+        .ar {
+            font-size: 30px;
+        }
+    </style>
+    <style id="bn_size_style">
+        .bn,
+        .pr {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="player">
-        <button onclick="toggle()"><i class="fas fa-bars"></i></button>
-        <button onclick="playPrev()"><i class="fas fa-step-backward"></i></button>
-        <button onclick="playPause()"><i id="btnPlay" class="fas fa-play"></i></button>
-        <button onclick="playNext()"><i class="fas fa-step-forward"></i></button>
-        <button onclick="stopAudio()"><i class="fas fa-stop"></i></button>
-        <button onclick="autoPlay()"><i class="fas fa-toggle-on"></i></button>
-        <div id="loader"></div>
+    <div id="body">
+        <div class="player">
+            <div id="loader"></div>
+            <div class="logo">
+                <img src="./img/favicon.png" alt="">
+                <h2>আল কোরআন</h2>
+            </div>
+            <div class="button">
+                <button onclick="indexToggle()"><i class="fas fa-bars"></i></button>
+                <button onclick="settingsToggle()"><i class="fas fa-gear"></i></button>
+                <button onclick="playPrev()"><i class="fas fa-step-backward"></i></button>
+                <button onclick="playPause()"><i id="btnPlay" class="fas fa-play"></i></button>
+                <button onclick="playNext()"><i class="fas fa-step-forward"></i></button>
+                <button onclick="stopAudio()"><i class="fas fa-stop"></i></button>
+                <button onclick="autoPlay()"><i class="fas fa-toggle-on"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="index" id="index"></div>
+            <div id="settings">
+
+                <h2>সেটিংস <button onclick="settingsToggle()"><i class="fas fa-x"></i></button>
+                </h2>
+
+                <div class="settings">
+                    <div class="card">
+                        <div class="heading">
+                            <h3>থিম</h3>
+                        </div>
+                        <div class="button">
+                            <button onclick="darkLight(this)"><i id="darkLight"class="fas fa-sun"></i></button>
+                            <button onclick="toggleBg()"><i class="fas fa-fan"></i></button>
+                            <button onclick="randomStar()"><i class="fas fa-star"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="heading">
+                            <h3 id="ar" onclick="showOptions(this)">আরবি ফন্ট</h3>
+                            <button id="ar-" onclick="changeFontSize(this)"><i class="fas fa-minus"></i></button><span id="ar_size">30</span><button id="ar+" onclick="changeFontSize(this)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="ar_options">
+                            <option onclick="changeFont(this)" id="ar" value="kitab">কিতাব</option>
+                            <option onclick="changeFont(this)" id="ar" value="AmiriQuran">আমিরি কুরআন</option>
+                            <option onclick="changeFont(this)" id="ar" value="qalam">কালাম</option>
+                            <option onclick="changeFont(this)" id="ar" value="me_quran">কুরআন</option>
+                            <option onclick="changeFont(this)" id="ar" value="Lateef-Regular">লতিফ</option>
+                            <option onclick="changeFont(this)" id="ar" value="noorehuda">নূর হুদা</option>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="heading">
+                            <h3 id="bn" onclick="showOptions(this)">বাংলা ফন্ট</h3>
+                            <button id="bn-" onclick="changeFontSize(this)"><i class="fas fa-minus"></i></button><span id="bn_size">20</span><button id="bn+" onclick="changeFontSize(this)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="bn_options">
+                            <option id="bn" onclick="changeFont(this)" value="AnekBangla-Regular">আনিক বাংলা</option>
+                            <option id="bn" onclick="changeFont(this)" value="Kalpurush">কালপুরুষ</option>
+                            <option id="bn" onclick="changeFont(this)" value="Mina-Regular">মিনা</option>
+                            <option id="bn" onclick="changeFont(this)" value="NotoSerifBengali">নোট-শেরিফ বাংলা</option>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="heading">
+                            <h3 id="tl" onclick="showOptions(this)">তিলাওয়াত</h3>
+                        </div>
+                        <div id="tl_options">
+                            <option value="">মিসারি আল আফাশি</option>
+                            <option value="">আব্দুর রহমান আস সুদাইশ</option>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="main" id="main"></div>
+        </div>
+        <section class="wrapper">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+        <div id="hidden">
+            <img id="bg_img" src="#" alt="#">
+        </div>
     </div>
 
-    <div class="container">
-        <div class="index" id="index"></div>
 
-        <div class="main" id="main"></div>
-    </div>
-
-    <script src="js/script.js"></script>
-    <script src="js/audioplayer.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/audioplayer.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>

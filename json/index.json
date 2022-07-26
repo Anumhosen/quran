@@ -1,0 +1,913 @@
+[{
+        "id": 1,
+        "ar": "الفاتحة",
+        "en": "Al-Fatihah",
+        "bn": "সূচনা",
+        "type": "meccan",
+        "total_verses": 7
+    },
+    {
+        "id": 2,
+        "ar": "البقرة",
+        "en": "Al-Baqarah",
+        "bn": "বকনা-বাছুর",
+        "type": "medinan",
+        "total_verses": 286
+    },
+    {
+        "id": 3,
+        "ar": "آل عمران",
+        "en": "Ali 'Imran",
+        "bn": "ইমরানের পরিবার",
+        "type": "medinan",
+        "total_verses": 200
+    },
+    {
+        "id": 4,
+        "ar": "النساء",
+        "en": "An-Nisa",
+        "bn": "নারী",
+        "type": "medinan",
+        "total_verses": 176
+    },
+    {
+        "id": 5,
+        "ar": "المائدة",
+        "en": "Al-Ma'idah",
+        "bn": "খাদ্য পরিবেশিত টেবিল",
+        "type": "medinan",
+        "total_verses": 120
+    },
+    {
+        "id": 6,
+        "ar": "الأنعام",
+        "en": "Al-An'am",
+        "bn": "গৃহপালিত পশু",
+        "type": "meccan",
+        "total_verses": 165
+    },
+    {
+        "id": 7,
+        "ar": "الأعراف",
+        "en": "Al-A'raf",
+        "bn": "উচু স্থান",
+        "type": "meccan",
+        "total_verses": 206
+    },
+    {
+        "id": 8,
+        "ar": "الأنفال",
+        "en": "Al-Anfal",
+        "bn": "যুদ্ধ-লব্ধ ধনসম্পদ",
+        "type": "medinan",
+        "total_verses": 75
+    },
+    {
+        "id": 9,
+        "ar": "التوبة",
+        "en": "At-Tawbah",
+        "bn": "অনুশোচনা",
+        "type": "medinan",
+        "total_verses": 129
+    },
+    {
+        "id": 10,
+        "ar": "يونس",
+        "en": "Yunus",
+        "bn": "নবী ইউনুস",
+        "type": "meccan",
+        "total_verses": 109
+    },
+    {
+        "id": 11,
+        "ar": "هود",
+        "en": "Hud",
+        "bn": "নবী হুদ",
+        "type": "meccan",
+        "total_verses": 123
+    },
+    {
+        "id": 12,
+        "ar": "يوسف",
+        "en": "Yusuf",
+        "bn": "নবী ইউসুফ",
+        "type": "meccan",
+        "total_verses": 111
+    },
+    {
+        "id": 13,
+        "ar": "الرعد",
+        "en": "Ar-Ra'd",
+        "bn": "বজ্রপাত",
+        "type": "medinan",
+        "total_verses": 43
+    },
+    {
+        "id": 14,
+        "ar": "ابراهيم",
+        "en": "Ibrahim",
+        "bn": "নবী ইবরাহীম",
+        "type": "meccan",
+        "total_verses": 52
+    },
+    {
+        "id": 15,
+        "ar": "الحجر",
+        "en": "Al-Hijr",
+        "bn": "পাথুরে পাহাড়",
+        "type": "meccan",
+        "total_verses": 99
+    },
+    {
+        "id": 16,
+        "ar": "النحل",
+        "en": "An-Nahl",
+        "bn": "মৌমাছি",
+        "type": "meccan",
+        "total_verses": 128
+    },
+    {
+        "id": 17,
+        "ar": "الإسراء",
+        "en": "Al-Isra",
+        "bn": "ইহুদি জাতি",
+        "type": "meccan",
+        "total_verses": 111
+    },
+    {
+        "id": 18,
+        "ar": "الكهف",
+        "en": "Al-Kahf",
+        "bn": "গুহা",
+        "type": "meccan",
+        "total_verses": 110
+    },
+    {
+        "id": 19,
+        "ar": "مريم",
+        "en": "Maryam",
+        "bn": "মারইয়াম (ঈসা নবীর মা)",
+        "type": "meccan",
+        "total_verses": 98
+    },
+    {
+        "id": 20,
+        "ar": "طه",
+        "en": "Taha",
+        "bn": "ত়া হা",
+        "type": "meccan",
+        "total_verses": 135
+    },
+    {
+        "id": 21,
+        "ar": "الأنبياء",
+        "en": "Al-Anbya",
+        "bn": "নবীগণ",
+        "type": "meccan",
+        "total_verses": 112
+    },
+    {
+        "id": 22,
+        "ar": "الحج",
+        "en": "Al-Hajj",
+        "bn": "হ়াজ্জ",
+        "type": "medinan",
+        "total_verses": 78
+    },
+    {
+        "id": 23,
+        "ar": "المؤمنون",
+        "en": "Al-Mu'minun",
+        "bn": "বিশ্বাসী",
+        "type": "meccan",
+        "total_verses": 118
+    },
+    {
+        "id": 24,
+        "ar": "النور",
+        "en": "An-Nur",
+        "bn": "আলো",
+        "type": "medinan",
+        "total_verses": 64
+    },
+    {
+        "id": 25,
+        "ar": "الفرقان",
+        "en": "Al-Furqan",
+        "bn": "মানদণ্ড",
+        "type": "meccan",
+        "total_verses": 77
+    },
+    {
+        "id": 26,
+        "ar": "الشعراء",
+        "en": "Ash-Shu'ara",
+        "bn": "কবি",
+        "type": "meccan",
+        "total_verses": 227
+    },
+    {
+        "id": 27,
+        "ar": "النمل",
+        "en": "An-Naml",
+        "bn": "পিঁপড়া",
+        "type": "meccan",
+        "total_verses": 93
+    },
+    {
+        "id": 28,
+        "ar": "القصص",
+        "en": "Al-Qasas",
+        "bn": "কাহিনি",
+        "type": "meccan",
+        "total_verses": 88
+    },
+    {
+        "id": 29,
+        "ar": "العنكبوت",
+        "en": "Al-'Ankabut",
+        "bn": "মাকড়শা",
+        "type": "meccan",
+        "total_verses": 69
+    },
+    {
+        "id": 30,
+        "ar": "الروم",
+        "en": "Ar-Rum",
+        "bn": "রোমান জাতি",
+        "type": "meccan",
+        "total_verses": 60
+    },
+    {
+        "id": 31,
+        "ar": "لقمان",
+        "en": "Luqman",
+        "bn": "এক জ্ঞানী ব্যাক্তি",
+        "type": "meccan",
+        "total_verses": 34
+    },
+    {
+        "id": 32,
+        "ar": "السجدة",
+        "en": "As-Sajdah",
+        "bn": "সিজদা",
+        "type": "meccan",
+        "total_verses": 30
+    },
+    {
+        "id": 33,
+        "ar": "الأحزاب",
+        "en": "Al-Ahzab",
+        "bn": "জোট",
+        "type": "medinan",
+        "total_verses": 73
+    },
+    {
+        "id": 34,
+        "ar": "سبإ",
+        "en": "Saba",
+        "bn": "রানী সাবা/শেবা",
+        "type": "meccan",
+        "total_verses": 54
+    },
+    {
+        "id": 35,
+        "ar": "فاطر",
+        "en": "Fatir",
+        "bn": "আদি স্রষ্টা",
+        "type": "meccan",
+        "total_verses": 45
+    },
+    {
+        "id": 36,
+        "ar": "يس",
+        "en": "Ya-Sin",
+        "bn": "ইয়াসীন",
+        "type": "meccan",
+        "total_verses": 83
+    },
+    {
+        "id": 37,
+        "ar": "الصافات",
+        "en": "As-Saffat",
+        "bn": "সারিবদ্ধভাবে দাঁড়ানো",
+        "type": "meccan",
+        "total_verses": 182
+    },
+    {
+        "id": 38,
+        "ar": "ص",
+        "en": "Sad",
+        "bn": "আরবি বর্ণ সাদ",
+        "type": "meccan",
+        "total_verses": 88
+    },
+    {
+        "id": 39,
+        "ar": "الزمر",
+        "en": "Az-Zumar",
+        "bn": "দলবদ্ধ জনতা",
+        "type": "meccan",
+        "total_verses": 75
+    },
+    {
+        "id": 40,
+        "ar": "غافر",
+        "en": "Ghafir",
+        "bn": "ক্ষমাকারী",
+        "type": "meccan",
+        "total_verses": 85
+    },
+    {
+        "id": 41,
+        "ar": "فصلت",
+        "en": "Fussilat",
+        "bn": "সুস্পষ্ট বিবরণ",
+        "type": "meccan",
+        "total_verses": 54
+    },
+    {
+        "id": 42,
+        "ar": "الشورى",
+        "en": "Ash-Shuraa",
+        "bn": "পরামর্শ",
+        "type": "meccan",
+        "total_verses": 53
+    },
+    {
+        "id": 43,
+        "ar": "الزخرف",
+        "en": "Az-Zukhruf",
+        "bn": "সোনাদানা",
+        "type": "meccan",
+        "total_verses": 89
+    },
+    {
+        "id": 44,
+        "ar": "الدخان",
+        "en": "Ad-Dukhan",
+        "bn": "ধোঁয়া",
+        "type": "meccan",
+        "total_verses": 59
+    },
+    {
+        "id": 45,
+        "ar": "الجاثية",
+        "en": "Al-Jathiyah",
+        "bn": "নতজানু",
+        "type": "meccan",
+        "total_verses": 37
+    },
+    {
+        "id": 46,
+        "ar": "الأحقاف",
+        "en": "Al-Ahqaf",
+        "bn": "বালুর পাহাড়",
+        "type": "meccan",
+        "total_verses": 35
+    },
+    {
+        "id": 47,
+        "ar": "محمد",
+        "en": "Muhammad",
+        "bn": "নবী মুহাম্মদ",
+        "type": "medinan",
+        "total_verses": 38
+    },
+    {
+        "id": 48,
+        "ar": "الفتح",
+        "en": "Al-Fath",
+        "bn": "বিজয়",
+        "type": "medinan",
+        "total_verses": 29
+    },
+    {
+        "id": 49,
+        "ar": "الحجرات",
+        "en": "Al-Hujurat",
+        "bn": "আবাস",
+        "type": "medinan",
+        "total_verses": 18
+    },
+    {
+        "id": 50,
+        "ar": "ق",
+        "en": "Qaf",
+        "bn": "কাফ",
+        "type": "meccan",
+        "total_verses": 45
+    },
+    {
+        "id": 51,
+        "ar": "الذاريات",
+        "en": "Adh-Dhariyat",
+        "bn": "বিক্ষেপকারী বাতাস",
+        "type": "meccan",
+        "total_verses": 60
+    },
+    {
+        "id": 52,
+        "ar": "الطور",
+        "en": "At-Tur",
+        "bn": "পাহাড়",
+        "type": "meccan",
+        "total_verses": 49
+    },
+    {
+        "id": 53,
+        "ar": "النجم",
+        "en": "An-Najm",
+        "bn": "তারা",
+        "type": "meccan",
+        "total_verses": 62
+    },
+    {
+        "id": 54,
+        "ar": "القمر",
+        "en": "Al-Qamar",
+        "bn": "চাঁদ",
+        "type": "meccan",
+        "total_verses": 55
+    },
+    {
+        "id": 55,
+        "ar": "الرحمن",
+        "en": "Ar-Rahman",
+        "bn": "পরম করুণাময়",
+        "type": "medinan",
+        "total_verses": 78
+    },
+    {
+        "id": 56,
+        "ar": "الواقعة",
+        "en": "Al-Waqi'ah",
+        "bn": "নিশ্চিত ঘটনা",
+        "type": "meccan",
+        "total_verses": 96
+    },
+    {
+        "id": 57,
+        "ar": "الحديد",
+        "en": "Al-Hadid",
+        "bn": "লোহা",
+        "type": "medinan",
+        "total_verses": 29
+    },
+    {
+        "id": 58,
+        "ar": "المجادلة",
+        "en": "Al-Mujadila",
+        "bn": "অনুযোগকারিণী",
+        "type": "medinan",
+        "total_verses": 22
+    },
+    {
+        "id": 59,
+        "ar": "الحشر",
+        "en": "Al-Hashr",
+        "bn": "সমাবেশ",
+        "type": "medinan",
+        "total_verses": 24
+    },
+    {
+        "id": 60,
+        "ar": "الممتحنة",
+        "en": "Al-Mumtahanah",
+        "bn": "নারী, যাকে পরীক্ষা করা হবে",
+        "type": "medinan",
+        "total_verses": 13
+    },
+    {
+        "id": 61,
+        "ar": "الصف",
+        "en": "As-Saf",
+        "bn": "সারিবদ্ধ সৈন্যদল",
+        "type": "medinan",
+        "total_verses": 14
+    },
+    {
+        "id": 62,
+        "ar": "الجمعة",
+        "en": "Al-Jumu'ah",
+        "bn": "সম্মেলন/শুক্রবার",
+        "type": "medinan",
+        "total_verses": 11
+    },
+    {
+        "id": 63,
+        "ar": "المنافقون",
+        "en": "Al-Munafiqun",
+        "bn": "ভণ্ড বিশ্বাসী",
+        "type": "medinan",
+        "total_verses": 11
+    },
+    {
+        "id": 64,
+        "ar": "التغابن",
+        "en": "At-Taghabun",
+        "bn": "মোহ অপসারণ",
+        "type": "medinan",
+        "total_verses": 18
+    },
+    {
+        "id": 65,
+        "ar": "الطلاق",
+        "en": "At-Talaq",
+        "bn": "তালাক",
+        "type": "medinan",
+        "total_verses": 12
+    },
+    {
+        "id": 66,
+        "ar": "التحريم",
+        "en": "At-Tahrim",
+        "bn": "নিষিদ্ধকরণ",
+        "type": "medinan",
+        "total_verses": 12
+    },
+    {
+        "id": 67,
+        "ar": "الملك",
+        "en": "Al-Mulk",
+        "bn": "সার্বভৌম কর্তৃত্ব",
+        "type": "meccan",
+        "total_verses": 30
+    },
+    {
+        "id": 68,
+        "ar": "القلم",
+        "en": "Al-Qalam",
+        "bn": "কলম",
+        "type": "meccan",
+        "total_verses": 52
+    },
+    {
+        "id": 69,
+        "ar": "الحاقة",
+        "en": "Al-Haqqah",
+        "bn": "নিশ্চিত সত্য",
+        "type": "meccan",
+        "total_verses": 52
+    },
+    {
+        "id": 70,
+        "ar": "المعارج",
+        "en": "Al-Ma'arij",
+        "bn": "উন্নয়নের সোপান",
+        "type": "meccan",
+        "total_verses": 44
+    },
+    {
+        "id": 71,
+        "ar": "نوح",
+        "en": "Nuh",
+        "bn": "নবী নূহ",
+        "type": "meccan",
+        "total_verses": 28
+    },
+    {
+        "id": 72,
+        "ar": "الجن",
+        "en": "Al-Jinn",
+        "bn": "জিন সম্প্রদায়",
+        "type": "meccan",
+        "total_verses": 28
+    },
+    {
+        "id": 73,
+        "ar": "المزمل",
+        "en": "Al-Muzzammil",
+        "bn": "বস্ত্রাচ্ছাদনকারী",
+        "type": "meccan",
+        "total_verses": 20
+    },
+    {
+        "id": 74,
+        "ar": "المدثر",
+        "en": "Al-Muddaththir",
+        "bn": "পোশাক পরিহিত",
+        "type": "meccan",
+        "total_verses": 56
+    },
+    {
+        "id": 75,
+        "ar": "القيامة",
+        "en": "Al-Qiyamah",
+        "bn": "পুনরুত্থান",
+        "type": "meccan",
+        "total_verses": 40
+    },
+    {
+        "id": 76,
+        "ar": "الانسان",
+        "en": "Al-Insan",
+        "bn": "মানবজাতি",
+        "type": "medinan",
+        "total_verses": 31
+    },
+    {
+        "id": 77,
+        "ar": "المرسلات",
+        "en": "Al-Mursalat",
+        "bn": "প্রেরিত পুরুষ",
+        "type": "meccan",
+        "total_verses": 50
+    },
+    {
+        "id": 78,
+        "ar": "النبإ",
+        "en": "An-Naba",
+        "bn": "মহাসংবাদ",
+        "type": "meccan",
+        "total_verses": 40
+    },
+    {
+        "id": 79,
+        "ar": "النازعات",
+        "en": "An-Nazi'at",
+        "bn": "প্রচেষ্টাকারী",
+        "type": "meccan",
+        "total_verses": 46
+    },
+    {
+        "id": 80,
+        "ar": "عبس",
+        "en": "'Abasa",
+        "bn": "সে ভ্রু কুঁচকালো",
+        "type": "meccan",
+        "total_verses": 42
+    },
+    {
+        "id": 81,
+        "ar": "التكوير",
+        "en": "At-Takwir",
+        "bn": "অন্ধকারাচ্ছন্ন",
+        "type": "meccan",
+        "total_verses": 29
+    },
+    {
+        "id": 82,
+        "ar": "الإنفطار",
+        "en": "Al-Infitar",
+        "bn": "বিদীর্ণ করা",
+        "type": "meccan",
+        "total_verses": 19
+    },
+    {
+        "id": 83,
+        "ar": "المطففين",
+        "en": "Al-Mutaffifin",
+        "bn": "প্রতারণা করা",
+        "type": "meccan",
+        "total_verses": 36
+    },
+    {
+        "id": 84,
+        "ar": "الإنشقاق",
+        "en": "Al-Inshiqaq",
+        "bn": "খণ্ড-বিখণ্ডকরণ",
+        "type": "meccan",
+        "total_verses": 25
+    },
+    {
+        "id": 85,
+        "ar": "البروج",
+        "en": "Al-Buruj",
+        "bn": "নক্ষত্রপুঞ্জ",
+        "type": "meccan",
+        "total_verses": 22
+    },
+    {
+        "id": 86,
+        "ar": "الطارق",
+        "en": "At-Tariq",
+        "bn": "রাতের আগন্তুক",
+        "type": "meccan",
+        "total_verses": 17
+    },
+    {
+        "id": 87,
+        "ar": "الأعلى",
+        "en": "Al-A'la",
+        "bn": "সর্বোন্নত",
+        "type": "meccan",
+        "total_verses": 19
+    },
+    {
+        "id": 88,
+        "ar": "الغاشية",
+        "en": "Al-Ghashiyah",
+        "bn": "বিহ্বলকর ঘটনা",
+        "type": "meccan",
+        "total_verses": 26
+    },
+    {
+        "id": 89,
+        "ar": "الفجر",
+        "en": "Al-Fajr",
+        "bn": "ভোরবেলা",
+        "type": "meccan",
+        "total_verses": 30
+    },
+    {
+        "id": 90,
+        "ar": "البلد",
+        "en": "Al-Balad",
+        "bn": "নগর",
+        "type": "meccan",
+        "total_verses": 20
+    },
+    {
+        "id": 91,
+        "ar": "الشمس",
+        "en": "Ash-Shams",
+        "bn": "সূর্য",
+        "type": "meccan",
+        "total_verses": 15
+    },
+    {
+        "id": 92,
+        "ar": "الليل",
+        "en": "Al-Layl",
+        "bn": "রাত",
+        "type": "meccan",
+        "total_verses": 21
+    },
+    {
+        "id": 93,
+        "ar": "الضحى",
+        "en": "Ad-Duhaa",
+        "bn": "পূর্বাহ্নের সুর্যকিরণ",
+        "type": "meccan",
+        "total_verses": 11
+    },
+    {
+        "id": 94,
+        "ar": "الشرح",
+        "en": "Ash-Sharh",
+        "bn": "বক্ষ প্রশস্তকরণ",
+        "type": "meccan",
+        "total_verses": 8
+    },
+    {
+        "id": 95,
+        "ar": "التين",
+        "en": "At-Tin",
+        "bn": "ডুমুর",
+        "type": "meccan",
+        "total_verses": 8
+    },
+    {
+        "id": 96,
+        "ar": "العلق",
+        "en": "Al-'Alaq",
+        "bn": "রক্তপিণ্ড",
+        "type": "meccan",
+        "total_verses": 19
+    },
+    {
+        "id": 97,
+        "ar": "القدر",
+        "en": "Al-Qadr",
+        "bn": "মহিমান্বিত",
+        "type": "meccan",
+        "total_verses": 5
+    },
+    {
+        "id": 98,
+        "ar": "البينة",
+        "en": "Al-Bayyinah",
+        "bn": "প্রমাণ",
+        "type": "medinan",
+        "total_verses": 8
+    },
+    {
+        "id": 99,
+        "ar": "الزلزلة",
+        "en": "Az-Zalzalah",
+        "bn": "ভূমিকম্প",
+        "type": "medinan",
+        "total_verses": 8
+    },
+    {
+        "id": 100,
+        "ar": "العاديات",
+        "en": "Al-'Adiyat",
+        "bn": "অভিযানকারী",
+        "type": "meccan",
+        "total_verses": 11
+    },
+    {
+        "id": 101,
+        "ar": "القارعة",
+        "en": "Al-Qari'ah",
+        "bn": "মহাসংকট",
+        "type": "meccan",
+        "total_verses": 11
+    },
+    {
+        "id": 102,
+        "ar": "التكاثر",
+        "en": "At-Takathur",
+        "bn": "প্রাচুর্যের প্রতিযোগিতা",
+        "type": "meccan",
+        "total_verses": 8
+    },
+    {
+        "id": 103,
+        "ar": "العصر",
+        "en": "Al-'Asr",
+        "bn": "সময়",
+        "type": "meccan",
+        "total_verses": 3
+    },
+    {
+        "id": 104,
+        "ar": "الهمزة",
+        "en": "Al-Humazah",
+        "bn": "পরনিন্দাকারী",
+        "type": "meccan",
+        "total_verses": 9
+    },
+    {
+        "id": 105,
+        "ar": "الفيل",
+        "en": "Al-Fil",
+        "bn": "হাতি",
+        "type": "meccan",
+        "total_verses": 5
+    },
+    {
+        "id": 106,
+        "ar": "قريش",
+        "en": "Quraysh",
+        "bn": "কুরাইশ গোত্র",
+        "type": "meccan",
+        "total_verses": 4
+    },
+    {
+        "id": 107,
+        "ar": "الماعون",
+        "en": "Al-Ma'un",
+        "bn": "সাহায্য সহায়তা",
+        "type": "meccan",
+        "total_verses": 7
+    },
+    {
+        "id": 108,
+        "ar": "الكوثر",
+        "en": "Al-Kawthar",
+        "bn": "কাউসার/প্রাচুর্য",
+        "type": "meccan",
+        "total_verses": 3
+    },
+    {
+        "id": 109,
+        "ar": "الكافرون",
+        "en": "Al-Kafirun",
+        "bn": "অবিশ্বাসী",
+        "type": "meccan",
+        "total_verses": 6
+    },
+    {
+        "id": 110,
+        "ar": "النصر",
+        "en": "An-Nasr",
+        "bn": "সাহায্য",
+        "type": "medinan",
+        "total_verses": 3
+    },
+    {
+        "id": 111,
+        "ar": "المسد",
+        "en": "Al-Masad",
+        "bn": "খেজুরের পাকানো (রশি)",
+        "type": "meccan",
+        "total_verses": 5
+    },
+    {
+        "id": 112,
+        "ar": "الإخلاص",
+        "en": "Al-Ikhlas",
+        "bn": "আন্তরিকতা",
+        "type": "meccan",
+        "total_verses": 4
+    },
+    {
+        "id": 113,
+        "ar": "الفلق",
+        "en": "Al-Falaq",
+        "bn": "নিশিভোর",
+        "type": "meccan",
+        "total_verses": 5
+    },
+    {
+        "id": 114,
+        "ar": "الناس",
+        "en": "An-Nas",
+        "bn": "মানুষ জাতি",
+        "type": "meccan",
+        "total_verses": 6
+    }
+]
